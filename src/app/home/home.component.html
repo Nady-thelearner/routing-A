@@ -2,4 +2,8 @@
 <p>Manage your Servers and Users.</p>
 <button class="btn btn-primary" (click)="onServermethod(1)">Navigate To Server</button>
 
+<button class="btn btn-default btn-success" (click)="onLogIn()">Login</button>
+<button class="btn btn-default btn-danger" (click)="onLogOut()">Logout</button>
 
+<h1 style="background-color: limegreen; color: white;" *ngIf="status()">You are now logged in.</h1>
+<h1 style="background-color: red; color: white;" *ngIf="!status()">You are logged out.</h1>
